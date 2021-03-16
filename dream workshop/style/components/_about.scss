@@ -1,0 +1,126 @@
+.about-info {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.about-title {
+
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+.about-img {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 80%;
+        object-fit: cover;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.75);
+
+
+    }
+}
+
+.about-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+
+.about-text {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding: 20px;
+
+    p {
+        padding: 10px 30px 0;
+        font-size: 1.05rem;
+        line-height: 1.5rem;
+        letter-spacing: 0;
+        text-align: justify;
+    }
+}
+
+.about-link {
+
+    &:before {
+        content: "";
+        background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 0;
+        left: -75px;
+        transform: skewX(-45deg);
+        cursor: auto;
+
+    }
+
+    &:hover:before {
+        left: 150%;
+        transition: .6s ease-in-out;
+    }
+
+    position: relative;
+    width: 170px;
+    height: 50px;
+    padding: 10px 10px;
+    margin: 30px 30px 10px;
+    border: solid 1.5px $text-blue;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    color: $text-blue;
+    text-align: center;
+    transition: all .4s ease-out;
+
+    &:hover {
+        background-color: $text-blue;
+        color: $base-white;
+
+    }
+
+    span {
+        padding-top: 2px;
+        margin-left: 5px;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .about-img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    .about-img {
+        display: none;
+    }
+
+    .about-text {
+        width: 100%;
+
+        P {
+            text-align: left;
+
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .about-info {
+        margin-top: 40px;
+    }
+}

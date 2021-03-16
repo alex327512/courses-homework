@@ -1,0 +1,13 @@
+$bgc-black: #313030;
+$base-white: #fff;
+$base-black: #000;
+$bgc-grey: #f8f8f6;
+$dark-blue: #0D1426;
+$text-blue: #37aaab;
+
+@mixin large-text {
+    font: {
+        family: 'Roboto', sans-serif;
+        weight: bold;
+    }
+}

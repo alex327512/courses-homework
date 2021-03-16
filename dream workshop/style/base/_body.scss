@@ -1,0 +1,17 @@
+body {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: $base-black;
+    overflow-x: hidden;
+    letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include large-text;
+}

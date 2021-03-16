@@ -1,0 +1,145 @@
+.prices {
+    padding: 20px 0 80px;
+}
+
+.prices-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 40px;
+
+    >li {
+
+
+        font-size: 1.1rem;
+
+        &:not(:last-child) {
+            a {
+                margin-right: 15px;
+
+            }
+        }
+
+        >a {
+            display: inline-block;
+            @include large-text;
+            text-transform: uppercase;
+
+            padding: 20px;
+            border: 1.5px dashed $dark-blue;
+            color: $base-black;
+            letter-spacing: 2px;
+            transition: all .2s ease-out;
+
+
+
+
+            &:hover {
+                color: $text-blue;
+
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &.active {
+
+            >a,
+            >a:hover,
+            >a:focus {
+                color: $text-blue;
+                border-color: $text-blue;
+            }
+        }
+    }
+}
+
+.tab-content {
+    width: 100%;
+
+    >.tab-pane {
+        display: none;
+
+        &.active {
+            display: block;
+            padding: 2.5% 3.5%;
+        }
+    }
+
+    >.active {
+        display: block;
+    }
+}
+
+.tab-prices {
+
+    .tab-title {
+        text-align: left;
+        padding: 20px 0;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    .tab-text {
+        >li {
+            display: flex;
+            justify-content: space-between;
+            padding: 16.5px 34px;
+            font-size: 1.1rem;
+
+            &:nth-child(2n) {
+                background-color: $bgc-grey;
+            }
+
+            small {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+    .tab-text {
+        li {
+            flex-direction: column;
+        }
+
+        p {
+            padding-bottom: 10px;
+        }
+    }
+
+    .nav-tabs {
+        flex-direction: column;
+
+        li {
+            margin-bottom: 15px;
+
+            &:not(:last-child) {
+                a {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

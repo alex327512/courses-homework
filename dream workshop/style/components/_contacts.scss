@@ -1,0 +1,180 @@
+.contacts {
+    padding: 40px 0 150px;
+    background-color: $bgc-grey;
+
+    &-title {
+        font-size: 1.9rem;
+        font-weight: 700;
+        padding-top: 25px;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+}
+
+.communication {
+    display: flex;
+
+    h2 {
+        font-size: 1.9rem;
+        font-weight: 700;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.social {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: $base-white;
+    border-radius: 20px;
+    margin-right: 40px;
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-item {
+        position: relative;
+        width: 250px;
+        padding: 15px 50px 15px;
+        font-size: 1.3rem;
+    }
+
+    .instagram a:before {
+        background-image: url(./../src/img/instagram.png);
+    }
+
+    .facebook a:before {
+        background-image: url(./../src/img/facebook.png);
+    }
+
+    .vkontakte a:before {
+        background-image: url(./../src/img/vkontakte.png);
+    }
+
+    .twitter a:before {
+        background-image: url(./../src/img/twitter.png);
+    }
+
+    a {
+        color: $base-black;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 35px;
+            height: 35px;
+            background-position: 50% 50%;
+            background-size: contain;
+            transform: translate(-20%, -50%);
+        }
+    }
+}
+
+.phone {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: $base-white;
+    border-radius: 20px;
+
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-item {
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 45px;
+            height: 45px;
+            background: 50% 50% no-repeat;
+            background-size: contain;
+            transform: translate(-120%, -50%);
+
+
+        }
+
+        position: relative;
+        width: 250px;
+        padding: 15px;
+        font-size: 1.3rem;
+
+
+        h3 {
+            margin-bottom: 8px;
+        }
+
+
+
+    }
+
+    .call:before {
+        background-image: url(./../src/img/call.png);
+
+
+
+    }
+
+    .viber:before {
+        width: 80px;
+        height: 80px;
+        background-image: url(./../src/img/viber-whatsapp.png);
+        transform: translate(-100%, -50%);
+
+    }
+
+    .email:before {
+        background-image: url(./../src/img/email.png);
+
+
+    }
+
+
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    .communication {
+        flex-wrap: wrap;
+    }
+
+    .social {
+        margin-right: 0;
+        margin-bottom: 50px;
+
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .social {
+        margin-right: 0;
+        margin-bottom: 50px;
+
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .phone {
+
+        &-item {
+            &::before {
+                display: none;
+            }
+        }
+
+    }
+}
