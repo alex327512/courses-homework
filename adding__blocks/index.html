@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Homework #5</title>
+</head>
+<body>
+    <section class="work-space"></section>
+    <div class="controls">
+        <input class="add-input" type="text" placeholder="Type here">
+        <button class="add-btn">Add new blocks</button>
+    </div>
+    <section class="example">
+        <h3 class="example__title">Copy this lines for the input test</h3>
+        <h4 class="example__subtitle">Body shouldn't be parent. It was made for better appearance.</h4>
+        <ul class="example__list">
+            <li class="example__item">
+                (section)(div)(div)(div)(div)(div)(3)
+            </li>
+            <li class="example__item">
+                (section)(div)(ul)(li)(8)
+            </li>
+            <li class="example__item">
+                (section)(div)(div)(div)(div)(div)(div)(div)
+            </li>
+            <li class="example__item">
+                (section)(nav)(ul)(li)(10)
+            </li>
+        </ul>
+        <h3 class="example__title">Copy this line for the console currying test</h3>
+        <p class="example__currying">makeBlock("section")("div")("div")("div")("div")("div")(3)</p>
+        <p class="example__currying">makeBlock(".work-space")("div")("ul")("li")("a")("5")</p>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>

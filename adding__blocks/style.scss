@@ -1,0 +1,126 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.work-space {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 171, 171);
+}
+
+.first, .second, .third,
+.forth, .fifth, .sixth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+    padding-top: 20px;
+}
+
+.first {
+    height: 360px;
+    margin: 10px;
+    max-width: 95%;
+    background-color: rgb(170, 247, 243);
+}
+
+.second {
+    height: 320px;
+    margin: 10px;
+    max-width: 90%;
+    background-color: rgb(247, 255, 171);
+}
+.third {
+    height: 280px;
+    margin: 10px;
+    max-width: 85%;
+    background-color: rgb(255, 161, 235);
+}
+.forth {
+    height: 240px;
+    margin: 10px;
+    max-width: 80%;
+    background-color: rgb(171, 255, 206);
+}
+.fifth {
+    height: 200px;
+    margin: 10px;
+    max-width: 75%;
+    background-color: rgb(255, 255, 255);
+}
+.sixth {
+    height: 160px;
+    margin: 10px;
+    max-width: 70%;
+    background-color: rgb(231, 171, 255);
+}
+
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 80px;
+    
+    .add-btn,
+    .add-input  {
+        margin-bottom: 10px;
+    }
+    .add-input {
+        width: 300px;
+        padding: 3px 5px;
+    }
+}
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+.appended-element {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: rgb(137, 255, 182);
+}
+
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__title, &__subtitle {
+        margin: 5px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+        padding: 5px;
+    }
+    &__currying {
+        margin: 5px;
+    }
+}
